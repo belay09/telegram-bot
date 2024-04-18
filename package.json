@@ -25,6 +25,7 @@
     },
     "type": "module",
     "dependencies": {
-        "node-telegram-bot-api": "^0.61.0"
+        "node-telegram-bot-api": "^0.61.0",
+        "supports-color": "^9.4.0"
     }
 }
