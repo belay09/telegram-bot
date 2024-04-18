@@ -18,11 +18,12 @@
 {#if last_error_date}
     <p>Last error: {last_error_date}</p>
 {/if}
-
 <ul>
     {#each data.history as { when, msg }}
         <li>
-            {new Date(when).toISOString()} - {JSON.stringify(msg.text)}
+            <p>Time: {new Date(when * 1000).toISOString()}</p>
+            <p>Message: {msg.text}</p>
         </li>
     {/each}
 </ul>
+adfsdf

@@ -2,14 +2,12 @@ import { env } from "$env/dynamic/private";
 import TelegramBot from "node-telegram-bot-api";
 
 const BOT_TOKEN = env.BOT_TOKEN;
-const WEBHOOK_URL = 'https://telegram-lvvr7zi8q-belays-projects.vercel.app';
 
 if (!BOT_TOKEN) {
     throw new Error("BOT_TOKEN is not set");
 }
 
 export const bot = new TelegramBot(BOT_TOKEN);
-bot.setWebhook(WEBHOOK_URL);
 
 console.log("bot", BOT_TOKEN);
 
