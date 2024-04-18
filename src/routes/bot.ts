@@ -8,6 +8,7 @@ if (!BOT_TOKEN) {
 }
 
 export const bot = new TelegramBot(BOT_TOKEN);
+bot.setWebhook(WEBHOOK_URL);
 
 console.log("bot", BOT_TOKEN);
 
