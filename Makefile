@@ -1,4 +1,4 @@
-HOST?=https://sveltekit-bot.vercel.app
+HOST?=https://telegram-lvvr7zi8q-belays-projects.vercel.app
 
 all:
 
